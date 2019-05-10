@@ -15,7 +15,7 @@ if(isset($_SESSION['username'])){
 <?php
 require 'header.php';
 ?>
-<body class="container">
+<div class="container">
 <h1>loguear</h1>
 <form action="login.php" method="post">
     <div class="form-group">
@@ -26,7 +26,7 @@ require 'header.php';
         <label for="pwd">Password:</label>
         <input type="password" class="form-control" name="clave" id="">
     </div>
-    <button type="submit" class="btn btn-default">Aceptar</button>
+    <button type="submit" class="btn btn-primary col-sm-12">Aceptar</button>
 </form>
 
 <?php
@@ -49,5 +49,5 @@ if(isset($_POST['usuario'])){
     }
 }
 ?>
-</body>
+</div>
 </html>
